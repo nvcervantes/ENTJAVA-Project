@@ -1,0 +1,1316 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 12, 17, 11:17:31 AM
+    Author     : Shierene
+*/
+
+
+
+.input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input1 {
+    width: 100%;
+    padding: 80px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+      /* Back Popup Login */
+}
+
+.input[type=submit] {
+    background-color: #4682B4;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;}
+
+body {
+  background: #FFDBA3;
+  color: #666666;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pen-title {
+  padding: 50px 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.pen-title h1 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  font-weight: 300;
+}
+.pen-title span {
+  font-size: 12px;
+}
+.pen-title span .fa {
+   color: #ed2553;
+  
+}
+.pen-title span a {
+    
+  /*color: #fcc064;*/
+  color: #4682b4;
+  font-weight: 600;
+  text-decoration: none;
+  /*Llanillo and Eclipse -Login*/
+}
+
+#codepen, #portfolio {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  
+  /**background: #4682B4;*/
+  background: #fcc064;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #ffffff;
+  text-align: center;
+}
+#codepen i, #portfolio i {
+  line-height: 56px;
+}
+#codepen:hover, #portfolio:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+#portfolio {
+  bottom: 96px;
+  right: 36px;
+  background: #4682b4;
+  width: 44px;
+  height: 44px;
+  -webkit-animation: buttonFadeInUp 1s ease;
+  animation: buttonFadeInUp 1s ease;
+}
+#portfolio i {
+  line-height: 44px;
+}
+
+.container {
+  position: relative;
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto 100px;
+}
+.container.active .card:first-child {
+  background: #f2f2f2;
+  margin: 0 15px;
+}
+.container.active .card:nth-child(2) {
+  background: #fafafa;
+  margin: 0 10px;
+}
+.container.active .card.alt {
+  top: 20px;
+  right: 0;
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 60px 0 40px;
+  overflow: hidden;
+}
+.container.active .card.alt .toggle {
+  position: absolute;
+  top: 40px;
+  right: -70px;
+  box-shadow: none;
+  -webkit-transform: scale(10);
+  transform: scale(10);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.container.active .card.alt .toggle:before {
+  content: '';
+}
+.container.active .card.alt .title,
+.container.active .card.alt .input-container,
+.container.active .card.alt .button-container {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.container.active .card.alt .title {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+.container.active .card.alt .input-container {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+.container.active .card.alt .input-container:nth-child(2) {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+.container.active .card.alt .input-container:nth-child(3) {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+.container.active .card.alt .button-container {
+  -webkit-transition-delay: .7s;
+          transition-delay: .7s;
+}
+
+
+.card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 60px 0 40px 0;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+ 
+}
+.card:first-child {
+  background: #fafafa;
+  height: 10px;
+  border-radius: 5px 5px 0 0;
+  margin: 0 10px;
+  padding: 0;
+}
+.card .title {
+  position: relative;
+  z-index: 1;
+  border-left: 5px solid #ed2553;
+  margin: 0 0 35px;
+  padding: 10px 0 10px 50px;
+  color: #ed2553;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card .input-container {
+  position: relative;
+  margin: 0 60px 50px;
+}
+.card .input-container input {
+  outline: none;
+  z-index: 1;
+  position: relative;
+  background: none;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  color: #212121;
+  font-size: 24px;
+  font-weight: 400;
+}
+.card .input-container input:focus ~ label {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input-container input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
+  width: 50%;
+}
+.card .input-container input:valid ~ label {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #757575;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 60px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.card .input-container .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #757575;
+  width: 100%;
+  height: 1px;
+}
+.card .input-container .bar:before, .card .input-container .bar:after {
+  content: '';
+  position: absolute;
+  background: #ed2553;
+  width: 0;
+  height: 2px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+.card .input-container .bar:before {
+  left: 50%;
+}
+.card .input-container .bar:after {
+  right: 50%;
+}
+.card .button-container {
+  margin: 0 60px;
+  text-align: center;
+}
+.card .button-container button {
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: 0;
+  width: 240px;
+  border: 2px solid #e3e3e3;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button span {
+  position: relative;
+  z-index: 1;
+  color: #ddd;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background: #ed2553;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: -15px 0 0 -15px;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button:hover, .card .button-container button:active, .card .button-container button:focus {
+  border-color: #ed2553;
+}
+.card .button-container button:hover span, .card .button-container button:active span, .card .button-container button:focus span {
+  color: #ed2553;
+}
+.card .button-container button:active span, .card .button-container button:focus span {
+  color: #ffffff;
+}
+.card .button-container button:active:before, .card .button-container button:focus:before {
+  opacity: 1;
+  -webkit-transform: scale(10);
+  transform: scale(10);
+}
+.card .footer {
+  margin: 40px 0 0;
+  color: #d3d3d3;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.card .footer a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .footer a:hover {
+  color: #bababa;
+}
+.card.alt {
+  position: absolute;
+  top: 40px;
+  right: -70px;
+  z-index: 10;
+  width: 140px;
+  height: 140px;
+  background: none;
+  border-radius: 100%;
+  box-shadow: none;
+  padding: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  /* Toggle */
+  /* Title */
+  /* Input */
+  /* Button */
+}
+.card.alt .toggle {
+  position: relative;
+  background: #ed2553;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #ffffff;
+  font-size: 58px;
+  line-height: 140px;
+  text-align: center;
+  cursor: pointer;
+}
+.card.alt .toggle:before {
+  content: '\f040';
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.card.alt .title,
+.card.alt .input-container,
+.card.alt .button-container {
+  left: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+.card.alt .title {
+  position: relative;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.card.alt .title .close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  display: inline;
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: 400;
+}
+.card.alt .title .close:before {
+  content: '\00d7';
+}
+.card.alt .input-container input {
+  color: #ffffff;
+}
+.card.alt .input-container input:focus ~ label {
+  color: #ffffff;
+}
+.card.alt .input-container input:focus ~ .bar:before, .card.alt .input-container input:focus ~ .bar:after {
+  background: #ffffff;
+}
+.card.alt .input-container input:valid ~ label {
+  color: #ffffff;
+}
+.card.alt .input-container label {
+  color: rgba(255, 255, 255, 0.8);
+}
+.card.alt .input-container .bar {
+  background: rgba(255, 255, 255, 0.8);
+}
+.card.alt .button-container button {
+  width: 100%;
+  background: #ffffff;
+  border-color: #ffffff;
+}
+.card.alt .button-container button span {
+  color: #ed2553;
+}
+.card.alt .button-container button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+.card.alt .button-container button:active:before, .card.alt .button-container button:focus:before {
+  display: none;
+}
+
+/* Keyframes */
+@-webkit-keyframes buttonFadeInUp {
+  0% {
+    bottom: 30px;
+    opacity: 0;
+  }
+}
+@keyframes buttonFadeInUp {
+  0% {
+    bottom: 30px;
+    opacity: 0;
+  }
+}
+.modal {
+    
+    position: fixed; 
+    z-index: 1;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.container-login {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: #000000; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+}
+
+.container-login-content {
+    background-color: #fefefe;
+    opacity: 0.9;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffc56b;
+    cursor: pointer;
+}
+
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+*/
+body {
+	margin: 0;
+}
+.slideshow-container {
+  width: 1000px;
+
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.mySlides {
+    display: none;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: rgba(0,51,204);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/*.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}*/
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+a {
+	text-decoration: none;
+}
+
+button {
+    outline: none;
+}
+@font-face {
+    font-family: "Helvetica Light";
+    src: url(../fonts/HelveticaLight.otf);
+}
+::selection {
+    background: black;
+    color: #0076ff;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background: #2c2a50;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #6a7da0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+a {
+	color: #0076ff;
+}
+section#banner{
+    height: 137px;
+    background-color: #fff;
+}
+input.inputfield, input.button, button.userbutt, button.contactbutt {
+    outline: transparent;
+    border: 0;
+    background-color: rgba(100, 100, 100, 0.3);
+    color: white;
+    padding: 10px;
+    font-family: Segoe UI Light;
+    transition: all .50s;
+}
+input.button:hover, button.userbutt:hover, button.contactbutt:hover {
+    background-color: rgba(0,118,255, 0.6);
+}
+button.contactbutt {
+    float: left;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+form td {
+    font-family: Segoe UI Light;
+}
+nav a {
+    cursor: pointer;
+    transition: all .50s;
+    color: white;
+    font-family: Segoe UI;
+    font-weight: 600;
+    padding: 0px;
+    padding-right: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+nav {
+    padding-left: 30px;
+}
+nav a:hover {
+    color: #0099ff;
+}
+nav #current {
+    color: #0076ff;
+}
+section#content {
+    background-color:#7a6e6c;
+    color: white;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+h2 {
+    margin: 0;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: #bcb076;
+}
+p {
+    font-family: Segoe UI Light;
+    margin: 0;
+}
+#events{
+    text-align: center;
+    width: 35%;
+    float: right;
+    padding: 0% 2.5%;
+    margin-right: 3%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid #e5e5e5;
+   
+}
+
+
+#imagecontainer {
+    float: left;
+    width: 49%;
+    margin-left: 3%;
+    padding: 0% 2%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid transparent;
+}
+#imagecontainer img {
+    width: 100%;
+    display: block;
+}
+
+#imagecontainer1 {
+    float: left;
+    width: 49%;
+    margin-left: 3%;
+    padding: 0% 2%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+#imagecontainer1 img {
+    width: 190%;
+    length: 70%;
+    display: block;
+}
+#imagecontainer6 img {
+    width: 190%;
+    length: 70%;
+    display: block;
+}
+
+#imagecontainer2 img {
+    width: 150%;
+    display: block;
+}
+#imagecontainer5 img {
+    width: 150%;
+    display: block;
+}
+#imagecontainer5 {
+    float: left;
+    width: 49%;
+    margin-left: 3%;
+    padding: 0% 2%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.fullbackground {
+    background-color: #f0e9dd;
+    padding: 20px 20px 20px 40px;
+    text-align: center;
+    background-image: url(../images/lightspeed.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+#vertmenu {
+    background-color: #c2c5cb;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.partnerimg {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.43);
+    transition: all .50s;
+}
+.partnerimg:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.45), 0 10px 10px rgba(0,0,0,0.42);
+}
+div#rightcontain {
+    float: right;
+    width: 38%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+}
+#rightcontain p {
+    color: white;
+    font-size: 15px;
+    text-align: left;
+}
+#rightcontain h1 {
+    color: #0076ff;
+    text-align: left;
+    margin: 0px;
+    padding-bottom: 10px;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+div#leftcontain {
+    float: left;
+    width: 40%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+}
+#leftcontain p {
+    color: white;
+    font-size: 15px;
+    text-align: left;
+}
+#leftcontain h1 {
+    color: #0076ff;
+    text-align: left;
+    margin: 0px;
+    padding-bottom: 10px;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.vertcontain {
+    width: 2600px;
+    margin-left: -30px;
+}
+
+#infospace {
+    text-align: center;
+    width: 35%;
+    float: right;
+    padding: 0% 2.5%;
+    margin-right: 3%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid #e5e5e5;
+    padding-bottom: 45px;
+}
+#infospace5 {
+    text-align: center;
+    width: 35%;
+    float: right;
+    padding: 0% 2.5%;
+    margin-right: 3%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid #e5e5e5;
+    padding-bottom: 45px;
+}
+#infospace1 {
+    text-align: center;
+    width: 20%;
+    float: left;
+    padding: 0% 2.5%;
+    margin-right: 20;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 10px solid transparent;
+    padding-bottom: 45px;
+}
+
+#juan {
+    float: left;
+    overflow-y: hidden;
+}
+.verticalmenu {
+    overflow-x: scroll;
+    width: 700px;
+}
+#vertmenu {
+    height: 600px;
+    padding: 40px;
+}
+.vertcontain ul {
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.vertcontain li {
+    height: 370px;
+}
+.vertcontain img {
+    width: 325px;
+}
+li {
+    display: inline-block;
+    padding: 0px 40px;
+    padding-left: 0px;
+    height: 200px;
+}
+.footcontain li {
+    display: block;
+    padding: 0px;
+    height: auto;
+}
+.footcontain {
+    width: 15%;
+    position: relative;
+    padding: 0px 40px 0px 40px;
+    float: left;
+    text-align: left;
+}
+header {
+    width: 100%;
+	z-index: 10;
+    position: fixed;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px); /* chrome://flags/#enable-experimental-web-platform-features */
+}
+header img {
+    width: 330px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+footer {
+    background-color: #FFFFFF;
+	padding: 30px;
+    position: relative;
+}
+footer a {
+    display: inline;
+}
+footer img {
+    width: 11%;
+    float: left;
+    display: inline;
+    padding: 0px 40px 0px 10px;
+}
+.footcontain h4 {
+    color: #0076ff;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+#footstuff {
+    padding-top: 40px;
+    overflow: hidden;
+}
+#footstuff a {
+    color: #3e312a;
+    font-size: 13px;
+    font-family: Segoe UI Light;
+}
+#footstuff ul {
+    color: #3e312a;
+    padding-left: 0;
+}
+#footstuff p {
+    color: white;
+}
+#banner1 h1 {
+    margin-top: 85px;
+}
+#banner1 {
+	height: 300px;
+    background-color: #E5CBBC;
+    background: url(photos/libertylibrary.jpg) no-repeat center center fixed;
+	padding: 20px;
+	text-align: center;
+	color: #E5CBBC;
+	font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-size: cover;
+	font-size: 30px;
+}
+#apcfooter {
+    background-color: #688ab0;
+    background-size: 100% 57%;
+    background-attachment: fixed;
+    height: 20px;
+	color: white;
+	font-family: 'Segoe UI Light', Arial, Helvetica, sans-serif;
+	letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+#apcfooter a {
+	color: white;
+}
+#backtotop {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+	z-index: 3;
+	text-align: center;
+    color: #423e23;
+	transition: all 1s ease-in-out;
+    background-color: #ede6d3;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#backtotop:hover {
+    color: white !important;
+    background-color: #0076ff !important;
+}
+#chevron {
+    color: inherit;
+	display: inline-block;
+	font-family: 'Segoe MDL2 Assets';
+	font-style: normal;
+	font-size: 25px;
+	margin-top: 9px;
+}
+#chevron:before {
+	content: '\e70e';
+}
+div#formcontainer {
+    padding: 100px 0px;
+}
+#formcontainer input.inputfield {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: 65px;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    padding-left: 75px;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}
+#formcontainer input.button {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: 65px;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}
+#final {
+    background-image: url(../images/citynight.jpg);
+}
+#final h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-size: cover;
+    font-size: 50px;
+    margin-bottom: -30px;
+    margin-top: 50px;
+}
+.fa {
+    color: white;
+    font-size: 30px !important;
+    padding-right: 15px;
+    padding-top: 5px;
+    transition: all .50s;
+}
+.fa:hover {
+    color: #0076ff;
+}
+#partnerbutt {
+    background-image: url(../images/partnerup.png);
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-size: 38px;
+}
+#drivebutt {
+    background-image: url(../images/car.png);
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-size: 38px;
+}
+#content th {
+    color: #0076ff;
+    background-color: #111;
+    padding: 10px;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+#content td {
+    font-family: Segoe UI Light;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    background-image: url(../images/blurcity.png);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 13px;
+}
+#content h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #0076ff;
+    padding-bottom: 10px;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.BookSuggestions {
+    background-color: #e3bab3;
+    padding: 20px 20px 20px 40px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.NewArrival {
+    background-color:#ccb5a0;
+    padding: 20px 20px 20px 40px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.NewArrival2 {
+    background-color:#7a6e6c;
+    padding: 20px 20px 20px 40px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.horimenu2 {
+    overflow-x: scroll;
+    width: 700px;
+}
+.horimenu3 {
+    overflow-x: scroll;
+    width: 700px;
+}
+
+.loginbutton {
+    background-color: #4CAF50;
+    color: white;
+    padding-left: 150px;
+    margin-left: 100px;
+    border: none;
+    cursor: pointer;
+    width: 500%;
+}
+
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
