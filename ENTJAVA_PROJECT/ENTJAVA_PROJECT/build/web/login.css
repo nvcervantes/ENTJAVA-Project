@@ -720,7 +720,7 @@ nav #current {
 }
 section#content {
     background-color:#7a6e6c;
-    color: white;
+    color: #121010;
     overflow: hidden;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -762,7 +762,7 @@ p {
     border-right: 1px solid transparent;
 }
 #imagecontainer img {
-    width: 100%;
+    width: 40%;
     display: block;
 }
 
@@ -1232,7 +1232,8 @@ span.psw {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 9999; /* Sit on top - higher than any other z-index in your site*/
+; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -1268,16 +1269,16 @@ button:hover {
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: #d5c7c6;
 }
 
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #76777b;
     margin: 5px auto; /* 15% from the top and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 40%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -1294,7 +1295,7 @@ button:hover {
 /* Close button on hover */
 .close:hover,
 .close:focus {
-    color: red;
+    color: #aaa7a6;
     cursor: pointer;
 }
 

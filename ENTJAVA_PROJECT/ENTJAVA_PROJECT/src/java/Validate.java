@@ -37,9 +37,9 @@ public class Validate extends HttpServlet {
             ResultSet rs = pst.executeQuery();
             
             if (rs.next()) {
-                out.println ("Correct login Credentials");
+                response.sendRedirect(request.getContextPath() + "/index.html");
             }else {
-                out.println("Incorrect Login Credentials");
+                response.sendRedirect(request.getContextPath() + "/incorrectcredentials.html");
             }
             
             }catch (ClassNotFoundException | SQLException e) {

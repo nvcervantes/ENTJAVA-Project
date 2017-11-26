@@ -49,21 +49,26 @@ and open the template in the editor.
                 
                                 <div id="id01" class="modal">
 
-                                  <form class="modal-content animate" action="/action_page.php">
+                                  <form class="modal-content animate" action="Validate" method="post">
                                     <div class="imgcontainer">
                                       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                                      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                                      <center><img src="photos/gradd.jpg" alt="Avatar" class="avatar"></center>
                                     </div>
-
+                                      <br>
                                     <div class="container">
                                       <label><b>Username</b></label>
-                                      <input type="text" placeholder="Enter Username" name="uname" required>
+                                      <input type="text" name="user"
+                                                         placeholder="Enter Username" required>
 
                                       <label><b>Password</b></label>
-                                      <input type="password" placeholder="Enter Password" name="psw" required>
+                                      <input type="password" name="pass"
+                                                         placeholder="Enter Password" required>
 
                                       <button type="submit">Login</button>
-                                      <input type="checkbox" checked="checked"> Remember me
+                                     
+                                      <input type="reset" value="Clear">
+                                      <input type="checkbox" checked="checked"> Remember me <br>
+
                                     </div>
 
                                     <div class="container" style="background-color:#f1f1f1">
@@ -85,18 +90,7 @@ and open the template in the editor.
                                 }
                                 </script>
 
-                                <form action="Validate" method="post">
-                                    <fieldset>
-                                        <legend><h4>Login</h4></legend>
-                                        Username: <input type="text" name="user"
-                                                         placeholder="Username Here"><br>
-                                        Password: <input type="password" name="pass"
-                                                         placeholder="Password Here"><p>
-                                            
-                                            <input type="submit" value="Login">
-                                            <input type="reset" value="Clear">
-                                    </fieldset>
-                                </form>	
+                                
                                 </section>
                                 <footer>
                                     
@@ -111,6 +105,7 @@ and open the template in the editor.
 					<ul>
 					<li ><a href="aboutus.html">About us</a></li>
 					<li><a href="contact.html">Contact</a></li>
+					<li><a href="privacy.html">Privacy Policy</a></li>
 					<li><a href="feedback.html">Send your feedback</a></li>
 					</ul>
 				</div>
