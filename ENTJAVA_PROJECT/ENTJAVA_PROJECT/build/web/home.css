@@ -118,7 +118,19 @@ input.inputfield, input.button, button.userbutt, button.contactbutt {
     font-family: Segoe UI Light;
     transition: all .50s;
 }
-input.button:hover, button.userbutt:hover, button.contactbutt:hover {
+
+button.reserve{
+    outline: transparent;
+    border: 0;
+    background-color: rgba(100, 100, 100, 0.3);
+    color: white;
+    padding: 10px;
+    font-family: Segoe UI Light;
+    transition: all .50s;
+    width: 350px;
+    length: 300px;
+}
+input.button:hover, button.userbutt:hover, button.contactbutt:hover, button.reserve:hover {
     background-color: rgba(0,118,255, 0.6);
 }
 button.contactbutt {
