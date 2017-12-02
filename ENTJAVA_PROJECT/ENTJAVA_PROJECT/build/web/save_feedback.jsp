@@ -1,6 +1,6 @@
 <%-- 
-    Document   : display_form_entry
-    Created on : 11 13, 17, 4:26:01 PM
+    Document   : save_feedback
+    Created on : 12 2, 17, 5:14:27 PM
     Author     : Shierene
     --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -72,22 +72,10 @@
                     
                      PreparedStatement pst = conn.prepareStatement("insert into feedback (firstName, lastName, yearLevel, subject)"
                     + " values (?, ?, ?, ?)");
-                    pst.setString(1, firstName);
-                    pst.setString(2, lastName);
-                    pst.setString(3, yearLevel);
-                    pst.setString(4, subject);
-                    
                     
                                  pst.executeUpdate();
                                  
                      %>
-                <h2>Thank you for sending your feedback! Rest assured we will as ever be committed to providing you nothing but the best!</h2>
-                <h3>Here are the information that you entered:</h3>
-                <h3> <label for="firstName">First Name: </label><%=firstName%></h3>
-                <h3><label for="lastName">Last Name: </label><%=lastName%> </h3>
-                <h3><label for="yearLevel">Year Level: </label><%=yearLevel%></h3>
-                <h3><label for="subject">Comments / Suggestions: </label><%=subject%></h3>
-                <br>
             </div>
         </section>
         <footer>
@@ -101,6 +89,7 @@
                     <ul>
                         <li ><a href="aboutus.html">About us</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="feedback.html">Send your feedback</a></li>
                     </ul>
                 </div>

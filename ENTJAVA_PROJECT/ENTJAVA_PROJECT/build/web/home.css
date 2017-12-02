@@ -162,8 +162,8 @@ nav #current {
     color: #0076ff;
 }
 section#content {
+    color: black;
     background-color:#7a6e6c;
-    color: white;
     overflow: hidden;
     padding-top: 50px;
     padding-bottom: 50px;

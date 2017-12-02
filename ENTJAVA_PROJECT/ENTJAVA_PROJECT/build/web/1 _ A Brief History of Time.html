@@ -39,17 +39,24 @@ and open the template in the editor.
 		<section id="banner1">
 		</section>
 		<section id="content">
+                       
+
 			<div id="imagecontainer1">
 				<div id="imagecontainer1" class="images">
-                                            <img src="photos/W_1 _ A Brief History of Time.jpg">
-                                    
-                                    
+                                            <img name="id" src="photos/W_1 _ A Brief History of Time.jpg">      
 				</div>
+                          <!--  <label><b>Book</b></label>
+                                      <input type="text" name="id"
+                                                         placeholder="Enter Title" required>
+
+                                      <label><b>Quantity</b></label>
+                                      <input type="text" name="stock"
+                                                         placeholder="Enter Quantity" required> -->>
 			</div> <aside id="infospace1">
                                 <div id="imagecontainer2" class="images">
-                                          
-                               <button style="display: inline-block;float: center; margin-left: 60px; margin-top: 150px; margin-right: 5px;" class="reserve" onclick="redirect()"> <h1> <font color="white">  Reserve Book </h1> </font> </button> 
-                                
+                                <form action="Book1" method="post">
+                               <button type="submit" style="display: inline-block;float: center; margin-left: 60px; margin-top: 150px; margin-right: 5px;" class="reserve"> <h1> <font color="white">  Reserve Book </h1> </font> </button> 
+                               </form>
 				<br/>
 			
 		</section>

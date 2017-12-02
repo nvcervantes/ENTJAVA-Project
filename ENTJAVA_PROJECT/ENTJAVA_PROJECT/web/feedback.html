@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <title> Feedback</title>
-        <meta charset="UTF-8">
+  <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="home.css">
     </head>
@@ -34,43 +34,42 @@ and open the template in the editor.
                                 <a href="login.html" style ="color: #3D4A39">Log in</a>
 			</nav>
 		</header>
-                <section id ="content">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </section>
-        <section id ="content">
+        
+        <section id="banner">
+		</section>
+		<section id="banner1">
+		</section>
+                       <section id="content">
+
         <div class="container5">
-  <form action="/action_page.php">
+   <form action="display_form_entry.jsp">
 
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
+    <input type="text" id="fname" name="firstName" placeholder="First Name" style="height:50px; width:900px">
     <br>
-    <select id="level" name="year level">
-      <option value="australia">Senior</option>
-      <option value="canada">Junior</option>
-      <option value="usa">Sophomore</option>
-      <option value="usa">Freshman</option>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastName" placeholder="Last Name"style="height:50px; width:900px">
+    <br>
+    <label for="level">Year Level</label>
+   
+    <select id="level" name="yearLevel"style="height:50px; width:900px">
+      <option value="Senior">Senior</option>
+      <option value="Junior">Junior</option>
+      <option value="Sophomore">Sophomore</option>
+      <option value="Freshman">Freshman</option>
 
     </select>
     <br>
     <br>
     <label for="subject">Comments / Suggestions </label>
     <br>
-    <h3><textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; width:1700px"></textarea></h3>
+    <h3><textarea id="subject" name="subject" placeholder="Write something..." style="height:200px; width:980px"></textarea></h3>
     <br>
     <input type="submit" value="Submit">
 
   </form>
 </div>
-                    <section id ="content">
-
+                           </section>
         
         <footer>
 			<div id="backtotop">
@@ -84,7 +83,6 @@ and open the template in the editor.
 					<ul>
 					<li ><a href="aboutus.html">About us</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					
 					<li><a href="feedback.html">Send your feedback</a></li>
 					</ul>
 				</div>
