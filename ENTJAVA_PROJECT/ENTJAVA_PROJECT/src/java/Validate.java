@@ -22,6 +22,9 @@ public class Validate extends HttpServlet {
     
     protected void doPost (HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        
+        
         
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
@@ -37,7 +40,8 @@ public class Validate extends HttpServlet {
             ResultSet rs = pst.executeQuery();
             
             if (rs.next()) {
-                response.sendRedirect(request.getContextPath() + "/index.html");
+                response.sendRedirect(request.getContextPath() + "/loggedin.jsp");
+                session.setAttribute("user", user);
             }else {
                 response.sendRedirect(request.getContextPath() + "/incorrectcredentials.html");
             }

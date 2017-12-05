@@ -108,7 +108,7 @@
         </footer>
         <footer id="apcfooter">
             <center>
-                <a href="https://apc.edu.ph/" target="_blank"> <b> © 2017  Asia Pacific College Library. All Rights Reserved |</b> </a>
+                <a href="https://apc.edu.ph/" target="_blank"> <b> © 2017  Asia Pacific College Library. All Rights Reserved</b> </a>
             </center>
         </footer>
     </body>
