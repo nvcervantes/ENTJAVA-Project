@@ -34,11 +34,11 @@
                 </tr>
             </table>
             <nav id="headnav">
-                <a href="index.html" style ="color: #6b2f23" >Home</a>
-                <a href="aboutus.html" style ="color: #3D4A39">About Us</a>
-                <a href="collections.html" style ="color: #3D4A39">Collections</a>
-                <a href="reservation.html" style ="color: #3D4A39" >Reservation</a>
-                <a href="login.html" style ="color: #3D4A39">Log in</a>
+                <a href="index.jsp" style ="color: #6b2f23" >Home</a>
+                <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
+                <a href="collections.jsp" style ="color: #3D4A39">Collections</a>
+                <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
+                <a href="login.jsp" style ="color: #3D4A39">Log in</a>
             </nav>
         </header>
         <section id="banner">
@@ -99,9 +99,9 @@
                     <h4 style ="color: #3e312a">About bibliotheque</h4>
                     <p style ="color: #3e312a">Learn more about the bibliotheque, its structure, how it works, and the people behind it.</p>
                     <ul>
-                        <li ><a href="aboutus.html">About us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="feedback.html">Send your feedback</a></li>
+                        <li ><a href="aboutus.jsp">About us</a></li>
+                        <li><a href="contact.jsp">Contact</a></li>
+                        <li><a href="feedback.jsp">Send your feedback</a></li>
                     </ul>
                 </div>
             </div>

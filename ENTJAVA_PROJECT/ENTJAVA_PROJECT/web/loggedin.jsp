@@ -30,11 +30,11 @@ and open the template in the editor.
 
 			<nav id="headnav">
 				<a id="current" style ="color: #6b2f23" >Home</a>
-                                <a href="aboutus.html" style ="color: #3D4A39">About Us</a>
-				<a href="collections.html" style ="color: #3D4A39">Collections</a>
-                                <a href="reservation.html" style ="color: #3D4A39" >Reservation</a>
-                                <a href="login.html" style ="color: #3D4A39">Log out</a>
-                                <a href="login.html" style ="color: #3D4A39">Hello, ${user}</a>
+                                <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
+				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
+                                <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
+                                <a href="login.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
 		<section id="banner">
@@ -44,7 +44,7 @@ and open the template in the editor.
 		<section id="content">
 			<div id="imagecontainer">
 				<div id="image1container" class="images">
-					<a href="reservation.html" target='_blank'>
+					<a href="reservation.jsp" target='_blank'>
 						<img src="photos/banner.jpg">
                                       </a>
 				</div>
@@ -53,7 +53,7 @@ and open the template in the editor.
 				<h2 style ="color: #dbae8b"> | E V E N T S | </h2>
                                 <br>
                                 <br>
-                                <a href="events.html" target='_blank'>
+                                <a href="events.jsp" target='_blank'>
                                 <img src="photos/mibf.jpg">
                                 </a>
 				<br/>
@@ -144,10 +144,10 @@ and open the template in the editor.
 					<h4 style ="color: #3e312a">About bibliotheque</h4>
 					<p style ="color: #3e312a">Learn more about the bibliotheque, its structure, how it works, and the people behind it.</p>
 					<ul>
-					<li ><a href="aboutus.html">About us</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li ><a href="aboutus.jsp">About us</a></li>
+					<li><a href="contact.jsp">Contact</a></li>
 					
-					<li><a href="feedback.html">Send your feedback</a></li>
+					<li><a href="feedback.jsp">Send your feedback</a></li>
 					</ul>
 				</div>
 				
@@ -156,7 +156,7 @@ and open the template in the editor.
 		</footer>
 		<footer id="apcfooter">
 			<center>
-                             <a href="https://apc.edu.ph/" target="_blank"> <b> © 2017  Asia Pacific College Library. All Rights Reserved |</b> </a>
+                             <a href="https://apc.edu.ph/" target="_blank"> <b> © 2017  Asia Pacific College Library. All Rights Reserved </b> </a>
 			</center>
 		</footer>
                 <!-- <h2>Modal Login Form</h2>
