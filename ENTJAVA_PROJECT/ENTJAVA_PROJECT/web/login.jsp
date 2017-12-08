@@ -35,9 +35,9 @@ and open the template in the editor.
 
 			<nav id="headnav">
 				<a href="index.jsp" style ="color: #6b2f23" >Home</a>
-                                <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
-				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
-                                <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
+                                <a href="aboutus.html" style ="color: #3D4A39">About Us</a>
+				<a href="collections.html" style ="color: #3D4A39">Collections</a>
+                                <a href="reservation.html" style ="color: #3D4A39" >Reservation</a>
                                 <a href="login.jsp" style ="color: #3D4A39">Log in</a>
 			</nav>
 		</header>

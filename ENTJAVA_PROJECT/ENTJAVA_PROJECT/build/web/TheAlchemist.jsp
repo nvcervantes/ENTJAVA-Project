@@ -1,3 +1,5 @@
+<%@page session="true"%>
+
 <%-- 
     Document   : TheAlchemist
     Created on : 12 5, 17, 9:09:03 PM
@@ -38,7 +40,8 @@ and open the template in the editor.
                                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
 				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                                <a href="login.jsp" style ="color: #3D4A39">Log in</a>
+                                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
         <section id="banner">

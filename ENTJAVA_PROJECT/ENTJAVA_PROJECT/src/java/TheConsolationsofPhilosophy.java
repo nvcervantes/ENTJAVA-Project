@@ -42,13 +42,13 @@ public class TheConsolationsofPhilosophy extends HttpServlet {
 
            
             if (!rs.first()) {
-                    response.sendRedirect(request.getContextPath() + "/notavailable.html");            
+                    response.sendRedirect(request.getContextPath() + "/notavailable.jsp");            
 
                    
             }else {
                     PreparedStatement pst1 = conn.prepareStatement("Update book set stock=stock-1 where id=33");
                     pst1.executeUpdate();
-                    response.sendRedirect(request.getContextPath() + "/available.html");            
+                    response.sendRedirect(request.getContextPath() + "/available.jsp");            
                    }
             
             

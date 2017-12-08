@@ -16,7 +16,7 @@ and open the template in the editor.
     <body>
 		<header>
                     <h1 style="display: inline;"> <a href="index.html" target='_blank'> <img id="logo" src="photos/Logo.jpg"/> </a></h1>
-			<button style="display: inline-block;float: right; margin-left: -5px; margin-top: 4px; margin-right: 30px;" class="userbutt" onclick="redirect()">Search</button>
+                    <button style="display: inline-block;float: right; margin-left: -5px; margin-top: 4px; margin-right: 30px;" class="userbutt" onclick="redirect()"> <a href="DeadlySkills.jsp"> Search </a> </button>
 				<table border="0" style="display: inline; float: right;">
 					<tr style="display: inline;">
                                             <td style="color: #dbae8b"> <b> Can't find what you're looking for? </b> </td>
@@ -33,7 +33,7 @@ and open the template in the editor.
                                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
 				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                                <a href="login.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
                                 <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
@@ -53,7 +53,7 @@ and open the template in the editor.
 				<h2 style ="color: #dbae8b"> | E V E N T S | </h2>
                                 <br>
                                 <br>
-                                <a href="events.jsp" target='_blank'>
+                                <a href="http://www.manilabookfair.com/" target='_blank'>
                                 <img src="photos/mibf.jpg">
                                 </a>
 				<br/>

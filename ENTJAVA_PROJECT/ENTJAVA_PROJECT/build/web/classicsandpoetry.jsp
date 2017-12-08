@@ -1,3 +1,5 @@
+<%@page session="true"%>
+
 <%-- 
     Document   : classicsandpoetry
     Created on : 12 5, 17, 9:37:05 PM
@@ -38,7 +40,8 @@ and open the template in the editor.
                                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
 				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                                <a href="login.jsp" style ="color: #3D4A39">Log in</a>
+                                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
         <section id="banner">
@@ -69,7 +72,7 @@ and open the template in the editor.
 				<a href="collections.jsp" style ="color: #3D4A39" >Education and Reference</a>
                                 <a href="classicsandpoetry.jsp" style ="color: #6b2f23">Classics and poetry</a>
 				<a href="literatureandfiction.jsp" style ="color: #3D4A39">Literature & fiction</a>
-                                <a href="science&nature.jsp" style ="color: #3D4A39" >Science and Nature</a>
+                                <a href="scienceandnature.jsp" style ="color: #3D4A39" >Science and Nature</a>
                                 <a href="history.jsp" style ="color: #3D4A39">History, Politics & Social Sciences </a>
 			</nav>
         <div class="mySlides">

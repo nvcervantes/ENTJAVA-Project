@@ -1,3 +1,5 @@
+<%@page session="true"%>
+
 <%-- 
     Document   : TheOneThatGotAway
     Created on : 12 5, 17, 9:18:42 PM
@@ -38,7 +40,8 @@ and open the template in the editor.
                                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
 				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                                <a href="login.jsp" style ="color: #3D4A39">Log in</a>
+                                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
         <section id="banner">
@@ -84,7 +87,7 @@ and open the template in the editor.
 		</footer>
 		<footer id="apcfooter">
 			<center>
-                             <a href="https://apc.edu.ph/" target="_blank"> <b> © 2017  Asia Pacific College Library. All Rights Reserved |</b> </a>
+                             <a href="https://apc.edu.ph/" target="_blank"> <b> © 2017  Asia Pacific College Library. All Rights Reserved </b> </a>
 			</center>
 		</footer>
        

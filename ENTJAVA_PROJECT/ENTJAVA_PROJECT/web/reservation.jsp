@@ -1,3 +1,5 @@
+<%@page session="true"%>
+
 <%-- 
     Document   : reservation
     Created on : 12 5, 17, 10:02:09 PM
@@ -38,7 +40,8 @@ and open the template in the editor.
                                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
 				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                                <a href="login.jsp" style ="color: #3D4A39">Log in</a>
+                                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
         <section id="banner">
@@ -59,11 +62,22 @@ and open the template in the editor.
             <br>
             <br>
 			<div id="imagecontainer1">
-				<div id="imagecontainer1" class="images">
-                                            <img src="photos/q2.jpg">
-                                    
-                                    
-				</div>
+                            <h1>These are the books that you have reserved: </h1>
+                            <h3>Education and Reference: </h3>
+                            <h3>100 Deadly Skills</h3>
+                            <br>
+                            <h3>Classics and Poetry: </h3>
+                            <h3>Alice's Adventures</h3>
+                            <br>
+                            <h3>Literature and Fiction: </h3>
+                            <h3>IQ84</h3>
+                            <br>
+                            <h3>Science and Nature: </h3>
+                            <h3>A Brief History of Time</h3>
+                            <br>
+                            <h3>History, Politics, and Social Science: </h3>
+                            <h3>A History of the World in 12 Maps</h3>
+
 			</div> <aside id="infospace1">
                                 <div id="imagecontainer2" class="images">
                                           

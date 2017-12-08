@@ -1,3 +1,5 @@
+<%@page session="true"%>
+
 <%-- 
     Document   : available
     Created on : 12 5, 17, 9:33:51 PM
@@ -38,7 +40,8 @@ and open the template in the editor.
                                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
 				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                                <a href="login.jsp" style ="color: #3D4A39">Log in</a>
+                                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
         <section id="banner">
@@ -46,7 +49,7 @@ and open the template in the editor.
 		<section id="banner1">
 		</section>
 		<section id="content">
-                    <h3>This book has been reserved for you!</h3>
+                    <c><h3>This book has been reserved for you, ${user}!</h3></c>
 			
 		</section>
         

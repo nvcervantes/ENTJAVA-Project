@@ -43,7 +43,7 @@ public class Validate extends HttpServlet {
                 response.sendRedirect(request.getContextPath() + "/loggedin.jsp");
                 session.setAttribute("user", user);
             }else {
-                response.sendRedirect(request.getContextPath() + "/incorrectcredentials.html");
+                response.sendRedirect(request.getContextPath() + "/incorrectcredentials.jsp");
             }
             
             }catch (ClassNotFoundException | SQLException e) {

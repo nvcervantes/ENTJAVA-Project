@@ -1,3 +1,5 @@
+<%@page session="true"%>
+
 <%-- 
     Document   : display_form_entry
     Created on : 11 13, 17, 4:26:01 PM
@@ -38,7 +40,8 @@
                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
                 <a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                <a href="login.jsp" style ="color: #3D4A39">Log in</a>
+                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
+                <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
             </nav>
         </header>
         <section id="banner">

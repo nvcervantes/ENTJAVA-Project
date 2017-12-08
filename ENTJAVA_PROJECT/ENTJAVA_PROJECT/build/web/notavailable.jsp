@@ -1,3 +1,5 @@
+<%@page session="true"%>
+
 <%-- 
     Document   : notavailable
     Created on : 12 5, 17, 10:01:14 PM
@@ -38,7 +40,8 @@ and open the template in the editor.
                                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
 				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                                <a href="login.jsp" style ="color: #3D4A39">Log in</a>
+                                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
         <section id="banner">
@@ -46,7 +49,7 @@ and open the template in the editor.
 		<section id="banner1">
 		</section>
 		<section id="content">
-                    <h3>We're sorry. This is not anymore available for reservation.</h3>
+                    <h3><c>We're sorry, ${user}. This is not anymore available for reservation.</c></h3>
 			
 		</section>
         

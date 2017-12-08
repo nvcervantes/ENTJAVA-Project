@@ -47,13 +47,13 @@ public class AHistoryoftheWorld extends HttpServlet {
 
            
             if (!rs.first()) {
-                    out.println("This book is not anymore available for reservation");
+                    response.sendRedirect(request.getContextPath() + "/notavailable.jsp");            
 
                    
             }else {
                     PreparedStatement pst1 = conn.prepareStatement("Update book set stock=stock-1 where id=2");
                     pst1.executeUpdate();
-                    response.sendRedirect(request.getContextPath() + "/index.html");            }
+                    response.sendRedirect(request.getContextPath() + "/available.jsp");                }
             
             }catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();

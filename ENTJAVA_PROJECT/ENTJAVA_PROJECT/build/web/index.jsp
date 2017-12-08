@@ -18,11 +18,25 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="home.css">
+        <script>
+                        $(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+            </script>
     </head>
     <body>
-		<header>
+    <header>
                     <h1 style="display: inline;"> <a href="index.jsp" target='_blank'> <img id="logo" src="photos/Logo.jpg"/> </a></h1>
-			<button style="display: inline-block;float: right; margin-left: -5px; margin-top: 4px; margin-right: 30px;" class="userbutt" onclick="redirect()">Search</button>
+                    <button style="display: inline-block;float: right; margin-left: -5px; margin-top: 4px; margin-right: 30px;" class="userbutt" onclick="redirect()"> <a href="DeadlySkills.jsp">Search </a> </button>
 				<table border="0" style="display: inline; float: right;">
 					<tr style="display: inline;">
                                             <td style="color: #dbae8b"> <b> Can't find what you're looking for? </b> </td>
@@ -36,9 +50,9 @@ and open the template in the editor.
 
 			<nav id="headnav">
 				<a id="current" style ="color: #6b2f23" >Home</a>
-                                <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
-				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
-                                <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
+                                <a href="aboutus.html" style ="color: #3D4A39">About Us</a>
+				<a href="collections.html" style ="color: #3D4A39">Collections</a>
+                                <a href="reservation.html" style ="color: #3D4A39" >Reservation</a>
                                 <a href="login.jsp" style ="color: #3D4A39">Log in</a>
 			</nav>
 		</header>
@@ -58,7 +72,7 @@ and open the template in the editor.
 				<h2 style ="color: #dbae8b"> | E V E N T S | </h2>
                                 <br>
                                 <br>
-                                <a href="events.jsp" target='_blank'>
+                                <a href="http://www.manilabookfair.com/" target='_blank'>
                                 <img src="photos/mibf.jpg">
                                 </a>
 				<br/>
@@ -72,7 +86,7 @@ and open the template in the editor.
                                                 <img class= "partnerimg" src= "photos/Book1.jpg">
 						</li>
 						<li>
-							<img src= "photos/Book2.jpg">
+							<img src= "photos/Book2.jpg" >
 						</li>
                                                 	<li>
 							<img src= "photos/Book3.jpg">
@@ -140,9 +154,7 @@ and open the template in the editor.
                 <br>
                  <br>
 		<footer>
-			<div id="backtotop">
-				<i id="chevron"></i>
-			</div>
+			
 			<div id="footstuff">
 				
 				<div class="footcontain">
