@@ -40,7 +40,7 @@ and open the template in the editor.
                                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
 				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="logout" style ="color: #3D4A39">Log out</a>
                                 <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
@@ -58,7 +58,7 @@ and open the template in the editor.
 			</div> <aside id="infospace1">
                                 <div id="imagecontainer2" class="images">
                                           
-<form action="CultureShockPhilippines" method="post">
+<form action="CultureShock" method="post">
                                <button type="submit" style="display: inline-block;float: center; margin-left: 60px; margin-top: 150px; margin-right: 5px;" class="reserve"> <h1> <font color="white">  Reserve Book </h1> </font> </button> 
                                </form>                                 
 				<br/>
@@ -87,7 +87,7 @@ and open the template in the editor.
 		</footer>
 		<footer id="apcfooter">
 			<center>
-                             <a href="https://apc.edu.ph/" target="_blank"> <b> © 2017  Asia Pacific College Library. All Rights Reserved |</b> </a>
+                             <a href="https://apc.edu.ph/" target="_blank"> <b> © 2017  Asia Pacific College Library. All Rights Reserved </b> </a>
 			</center>
 		</footer>
        

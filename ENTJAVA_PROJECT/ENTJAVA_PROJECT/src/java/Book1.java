@@ -24,12 +24,14 @@ import javax.swing.JOptionPane;
 public class Book1 extends HttpServlet {
     protected void doPost (HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+                HttpSession session = request.getSession(false);
+
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
         String id = request.getParameter("id");
         String stock = request.getParameter("stock");
+        String user = request.getParameter("user");
 
         
          try {
@@ -47,7 +49,13 @@ public class Book1 extends HttpServlet {
                    
             }else {
                     PreparedStatement pst1 = conn.prepareStatement("Update book set stock=stock-1 where id=1");
+                    PreparedStatement pst2 = conn.prepareStatement("insert into user_books (user, book)"
+                    + " values (?, ?)");
+
+                    pst2.setString(1, "shierene");
+                    pst2.setString(2, "A Brief History of Time");
                     pst1.executeUpdate();
+                    pst2.executeUpdate();
                     response.sendRedirect(request.getContextPath() + "/available.jsp");            
                    }
             

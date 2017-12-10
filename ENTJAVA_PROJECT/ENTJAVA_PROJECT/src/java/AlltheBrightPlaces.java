@@ -47,8 +47,15 @@ public class AlltheBrightPlaces extends HttpServlet {
                    
             }else {
                     PreparedStatement pst1 = conn.prepareStatement("Update book set stock=stock-1 where id=19");
+                    PreparedStatement pst2 = conn.prepareStatement("insert into user_books (user, book)"
+                    + " values (?, ?)");
+
+                    pst2.setString(1, "shierene");
+                    pst2.setString(2, "All the Bright Places");
                     pst1.executeUpdate();
-                    response.sendRedirect(request.getContextPath() + "/available.jsp");                }
+                    pst2.executeUpdate();
+                    response.sendRedirect(request.getContextPath() + "/available.jsp");            
+                   }
             
             }catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();

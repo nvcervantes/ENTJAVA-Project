@@ -47,7 +47,13 @@ public class Papa extends HttpServlet {
                    
             }else {
                     PreparedStatement pst1 = conn.prepareStatement("Update book set stock=stock-1 where id=50");
+                    PreparedStatement pst2 = conn.prepareStatement("insert into user_books (user, book)"
+                    + " values (?, ?)");
+
+                    pst2.setString(1, "shierene");
+                    pst2.setString(2, "Papa");
                     pst1.executeUpdate();
+                    pst2.executeUpdate();
                     response.sendRedirect(request.getContextPath() + "/available.jsp");            
                    }
             

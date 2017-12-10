@@ -45,9 +45,15 @@ public class Philosophy101 extends HttpServlet {
                     response.sendRedirect(request.getContextPath() + "/notavailable.jsp");            
 
                    
-            }else {
+           }else {
                     PreparedStatement pst1 = conn.prepareStatement("Update book set stock=stock-1 where id=17");
+                    PreparedStatement pst2 = conn.prepareStatement("insert into user_books (user, book)"
+                    + " values (?, ?)");
+
+                    pst2.setString(1, "shierene");
+                    pst2.setString(2, "Philosophy 101");
                     pst1.executeUpdate();
+                    pst2.executeUpdate();
                     response.sendRedirect(request.getContextPath() + "/available.jsp");            
                    }
             

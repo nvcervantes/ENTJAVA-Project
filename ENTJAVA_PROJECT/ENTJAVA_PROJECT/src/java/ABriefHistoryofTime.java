@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Krisper Jane
+ * @author Shierene
  */
 @WebServlet(urlPatterns = {"/ABriefHistoryofTime"})
 
@@ -29,6 +29,7 @@ public class ABriefHistoryofTime extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
+        String user = request.getParameter("user");
         String id = request.getParameter("id");
         String stock = request.getParameter("stock");
 
@@ -46,10 +47,17 @@ public class ABriefHistoryofTime extends HttpServlet {
                     response.sendRedirect(request.getContextPath() + "/notavailable.jsp");            
 
                    
-            }else {
+           }else {
                     PreparedStatement pst1 = conn.prepareStatement("Update book set stock=stock-1 where id=2");
+                    PreparedStatement pst2 = conn.prepareStatement("insert into user_books (user, book)"
+                    + " values (?, ?)");
+
+                    pst2.setString(1, user);
+                    pst2.setString(2, "A Brief History of Time");
                     pst1.executeUpdate();
-                    response.sendRedirect(request.getContextPath() + "/available.jsp");              }
+                    pst2.executeUpdate();
+                    response.sendRedirect(request.getContextPath() + "/available.jsp");            
+                   }
             
             }catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();

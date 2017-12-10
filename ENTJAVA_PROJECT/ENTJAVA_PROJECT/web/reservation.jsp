@@ -40,7 +40,7 @@ and open the template in the editor.
                                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
 				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="logout" style ="color: #3D4A39">Log out</a>
                                 <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
@@ -62,21 +62,39 @@ and open the template in the editor.
             <br>
             <br>
 			<div id="imagecontainer1">
+                            <h3> Hi, ${user}!</h3>
                             <h1>These are the books that you have reserved: </h1>
-                            <h3>Education and Reference: </h3>
-                            <h3>100 Deadly Skills</h3>
-                            <br>
-                            <h3>Classics and Poetry: </h3>
-                            <h3>Alice's Adventures</h3>
-                            <br>
-                            <h3>Literature and Fiction: </h3>
-                            <h3>IQ84</h3>
-                            <br>
-                            <h3>Science and Nature: </h3>
-                            <h3>A Brief History of Time</h3>
-                            <br>
-                            <h3>History, Politics, and Social Science: </h3>
-                            <h3>A History of the World in 12 Maps</h3>
+                            <%@ page import="java.sql.*" %>
+
+                            <%
+                        try
+                        {
+                        Class.forName("com.mysql.jdbc.Driver");
+                        //String url="jdbc:mysql://localhost/test";
+                        Connection conn = null;
+                        String user = request.getParameter("user");
+                        conn =  DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+                         PreparedStatement pst = conn.prepareStatement("select * from user_books");
+                         ResultSet rs=pst.executeQuery();
+                        while(rs.next())
+                        {
+
+                        %>
+                        <h3>*<%=rs.getString("book") %></h3>
+                                <%
+
+                        }
+                        %>
+                        <%
+                            rs.close();
+                            pst.close();
+                            conn.close();
+                            }
+                        catch(Exception e)
+                        {
+                            e.printStackTrace();
+                            }
+                        %>
 
 			</div> <aside id="infospace1">
                                 <div id="imagecontainer2" class="images">
@@ -111,7 +129,7 @@ and open the template in the editor.
 		</footer>
 		<footer id="apcfooter">
 			<center>
-                             <a href="https://apc.edu.ph/" target="_blank"> <b> © 2017  Asia Pacific College Library. All Rights Reserved |</b> </a>
+                             <a href="https://apc.edu.ph/" target="_blank"> <b> © 2017  Asia Pacific College Library. All Rights Reserved </b> </a>
 			</center>
 		</footer>
        

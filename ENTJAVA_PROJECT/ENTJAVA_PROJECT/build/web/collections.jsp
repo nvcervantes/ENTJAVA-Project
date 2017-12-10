@@ -40,7 +40,7 @@ and open the template in the editor.
                                 <a href="aboutus.jsp" style ="color: #3D4A39">About Us</a>
 				<a href="collections.jsp" style ="color: #3D4A39">Collections</a>
                                 <a href="reservation.jsp" style ="color: #3D4A39" >Reservation</a>
-                                <a href="index.jsp" style ="color: #3D4A39">Log out</a>
+                                <a href="logout" style ="color: #3D4A39">Log out</a>
                                 <a href="login.jsp" style ="color: #3D4A39">Hello, ${user}</a>
 			</nav>
 		</header>
@@ -167,7 +167,7 @@ and open the template in the editor.
         <div class="container">
         <div id="container">
         <div id="left"> <div id="container" class="images">
-                <a href="7_CultureShock.jsp">
+                <a href="CultureShock.jsp">
                 <img src="photos/CultureShockPhilippines.jpg">
                 </a>
         </div></div>
